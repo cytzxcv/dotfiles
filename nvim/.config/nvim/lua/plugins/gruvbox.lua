@@ -5,7 +5,9 @@ return {
         lazy = false,
         config = function()
             require("gruvbox").setup({
-                contrast = "hard"
+                italic = { strings = false },
+                contrast = "hard",
+                transparent_mode = true
             })
             vim.o.background = "dark"
             vim.cmd.colorscheme("gruvbox")

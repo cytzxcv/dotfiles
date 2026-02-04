@@ -1,0 +1,9 @@
+[core]
+	editor = nvim
+[user]
+	name = cytzxcv
+	email = mail.cyt@pm.me
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
