@@ -30,6 +30,13 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 -- end nvim-tree
 
+-- start barbar.nvim
+vim.api.nvim_set_hl(0, "BufferCurrent", { fg = "#d5c4a1", bg = "#665c54", bold = true })
+vim.api.nvim_set_hl(0, "BufferCurrentMod", { fg = "#fabd2f", bg = "#665c54", bold = true })
+vim.api.nvim_set_hl(0, "BufferVisibleMod", { fg = "#fabd2f"})
+vim.api.nvim_set_hl(0, "BufferInactiveMod", { fg = "#fabd2f"})
+-- end barbar.nvim
+
 vim.o.number = true
 vim.o.tabstop = 4
 vim.o.expandtab = true

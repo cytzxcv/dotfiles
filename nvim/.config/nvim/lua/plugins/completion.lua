@@ -1,6 +1,6 @@
 return {{
     "saghen/blink.cmp",
     dependencies = { "rafamadriz/friendly-snippets" },
-    version = "1.*",
+    version = "*",
     opts = { keymap = { preset = "super-tab" } }
 }}
