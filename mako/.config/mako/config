@@ -1,4 +1,5 @@
 anchor=bottom-right
 outer-margin=10,0
-background-color=#202020DE
-border-color=#808080FF
+background-color=#1D2021DE
+border-color=#FBF1C7FF
+border-radius=9

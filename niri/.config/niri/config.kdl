@@ -274,6 +274,8 @@ spawn-at-startup "waybar"
 
 spawn-at-startup "elephant"
 
+spawn-at-startup "fcitx5"
+
 spawn-sh-at-startup "wbg ~/Pictures/wallpaper.png"
 
 spawn-at-startup "gtklock"
