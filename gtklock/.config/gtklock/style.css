@@ -6,10 +6,45 @@ window {
     background-color: black;
 }
 
+#input-field.is-visible {
+    /* This applies when the password IS shown (plain text) */
+    letter-spacing: 9px;
+}
+
 #window-box {
 	padding: 64px;
 	border: 1px solid black;
 	border-radius: 4px;
 	box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
-	background-color: #1d2021;
+	background-color: #2e3440;
+}
+
+#unlock-button {
+    background-color: #5e81ac;
+    background-image: none;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+#unlock-button:hover {
+    background-color: #81a1c1;
+}
+
+#unlock-button:active {
+    background-color: #8fbcbb;
+}
+
+#error-label {
+    color: #bf616a;
+}
+
+#clock-label,
+#date-label,
+#input-label,
+#warning-label,
+#error-label,
+#input-field,
+#unlock-button {
+    font-family: "JetBrainsMonoNL Nerd Font SemiBold"; 
 }

@@ -21,22 +21,6 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
--- start nvim-tree
--- disable netrw at the very start of your init.lua
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
-
--- optionally enable 24-bit colour
-vim.opt.termguicolors = true
--- end nvim-tree
-
--- start barbar.nvim
-vim.api.nvim_set_hl(0, "BufferCurrent", { fg = "#d5c4a1", bg = "#665c54", bold = true })
-vim.api.nvim_set_hl(0, "BufferCurrentMod", { fg = "#fabd2f", bg = "#665c54", bold = true })
-vim.api.nvim_set_hl(0, "BufferVisibleMod", { fg = "#fabd2f"})
-vim.api.nvim_set_hl(0, "BufferInactiveMod", { fg = "#fabd2f"})
--- end barbar.nvim
-
 vim.o.number = true
 vim.o.tabstop = 4
 vim.o.expandtab = true
@@ -50,7 +34,7 @@ require("lazy").setup({
     },
     -- Configure any other settings here. See the documentation for more details.
     -- colorscheme that will be used when installing plugins.
-    install = { colorscheme = { "gruvbox" } },
+    install = { colorscheme = { "nordic" } },
     -- automatically check for plugin updates
     checker = { enabled = true },
 })
