@@ -6,9 +6,8 @@ window {
     background-color: black;
 }
 
-#input-field.is-visible {
-    /* This applies when the password IS shown (plain text) */
-    letter-spacing: 9px;
+#input-field {
+    background-color: #1e222a;
 }
 
 #window-box {
@@ -33,6 +32,15 @@ window {
 
 #unlock-button:active {
     background-color: #8fbcbb;
+}
+
+#clock-label,
+#date-label,
+#input-label,
+#warning-label,
+#input-field,
+#unlock-button {
+    color: #d8dee9;
 }
 
 #error-label {

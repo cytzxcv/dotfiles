@@ -9,11 +9,18 @@ return {{
                 float = true
             },
             on_highlight = function(highlights, palette)
-                highlights.BufferCurrent = { bg = "#4c566a", bold = true }
-                highlights.BufferCurrentMod = { fg = "#ebcb8b", bg = "#4c566a", bold = true }
+                highlights.BufferCurrent = { bg = palette.gray4, bold = true }
+                highlights.BufferCurrentMod = { fg = palette.yellow.base, bg = palette.gray4, bold = true }
+
+                highlights.CursorLine = { bg = palette.none }
+                highlights.LineNr = { fg = palette.gray4 }
+                highlights.CursorLineNr = { fg = palette.yellow.base, bold = true }
+
+                highlights.Comment = { fg = palette.gray5, italic = true }
+
+                highlights.Visual = { reverse = true }
             end
         })
         require("nordic").load()
-        vim.api.nvim_set_hl(0, 'Visual', { reverse = true })
     end
 }}
