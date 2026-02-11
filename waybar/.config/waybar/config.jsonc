@@ -6,24 +6,32 @@
     "modules-left": [
         "niri/workspaces",
         
+        "network",
+
         "tray"
     ],
     
     "modules-right": [
         "wireplumber",
         
-        "network",
+        "backlight",
         
         "cpu",
         
         "memory",
-        
+
         "temperature",
         
         "battery",
         
         "clock"
     ],
+
+    "backlight": {
+        "format": "{percent}% {icon}",
+
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
     
     "tray": {
         "spacing": 10
@@ -114,8 +122,6 @@
             "car": "",
             
             "default": ["", "", ""]
-        },
-        
-        "on-click": "pavucontrol"
+        }
     } 
 }

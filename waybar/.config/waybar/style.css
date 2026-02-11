@@ -12,6 +12,8 @@ button {
     border: none;
 
     border-radius: 0;
+
+    box-shadow: inset 0 0 0 transparent;
 }
 
 button:hover {
@@ -25,30 +27,28 @@ button:hover {
 #workspaces button {
     padding: 0 5px;
 
-    background-color: transparent;
+    color: #d8dee9;
 }
 
 #workspaces button:hover {
     background: rgba(76, 86, 106, 0.5);
+
+    text-shadow: none;
 }
 
 #workspaces button.focused {
     background-color: #4C566A;
 }
 
+#backlight,
 #clock,
 #battery,
 #cpu,
 #memory,
-#temperature,
 #network,
 #wireplumber,
 #tray {
-    margin: 3px;
-
     padding: 0 7.5px;
-    
-    color: #ffffff;
 }
 
 #clock {
@@ -59,9 +59,12 @@ button:hover {
 
 #battery {
     color: #D8DEE9;
+
+    margin-left: 20px;
 }
 
-#battery.charging, #battery.plugged {
+#battery.charging,
+#battery.plugged {
     color: #8fbcbb;
 }
 
@@ -85,14 +88,24 @@ button:hover {
 
 #cpu {
     color: #A3BE8C;
+
+    margin-left: 20px;
 }
 
 #memory {
     color: #B48EAD;
 }
 
+#temperature {
+    color: #d08770;
+
+    margin-left: 20px;
+}
+
 #network {
     color: #5e81ac;
+
+    margin-right: 30px;
 }
 
 #network.disconnected {
@@ -107,12 +120,8 @@ button:hover {
     color: #2a5c45;
 }
 
-#temperature {
-    color: #D08770;
-}
-
-#temperature.critical {
-    color: #eb4d4b;
+#tray {
+    color: #ffffff;
 }
 
 #tray > .passive {
@@ -121,4 +130,8 @@ button:hover {
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
+}
+
+#backlight {
+    color: rgba(146, 154, 170, 1.0);
 }

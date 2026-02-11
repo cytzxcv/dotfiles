@@ -1,9 +1,20 @@
 [core]
-	editor = nvim
+
+    editor = nvim
+
+
 [user]
-	name = cytzxcv
-	email = mail.cyt@pm.me
+    
+    name = cytzxcv
+    
+    email = mail.cyt@pm.me
+
+
 [init]
-	defaultBranch = main
+    
+    defaultBranch = main
+
+
 [pull]
-	rebase = true
+    
+    rebase = true
