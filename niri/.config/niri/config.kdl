@@ -52,6 +52,8 @@ spawn-at-startup "waybar"
 
 spawn-at-startup "elephant"
 
+spawn-sh-at-startup "walker --gapplication-service"
+
 spawn-at-startup "fcitx5"
 
 spawn-sh-at-startup "wbg ~/Pictures/wallpaper.png"
@@ -80,6 +82,7 @@ window-rule {
 
 window-rule {
     geometry-corner-radius 9
+
     clip-to-geometry true
 }
 
@@ -352,9 +355,14 @@ binds {
     Mod+Shift+P { power-off-monitors; }
 
 
-    Super+BackSlash { spawn-sh "systemctl suspend && gtklock"; }
+    Super+BackSlash hotkey-overlay-title="sleep" { spawn-sh "systemctl suspend && gtklock"; }
     
-    Super+Alt+BackSlash { spawn-sh "systemctl hibernate && gtklock"; }
+    Super+Ctrl+BackSlash hotkey-overlay-title="hibernate" { spawn-sh "systemctl hibernate && gtklock"; }
     
-    Super+Ctrl+BackSlash { spawn-sh "systemctl hybrid-sleep && gtklock"; }
+    Super+Shift+BackSlash hotkey-overlay-title="hybrid-sleep" { spawn-sh "systemctl hybrid-sleep && gtklock"; }
+
+
+    Super+Alt+BackSlash hotkey-overlay-title="reboot" { spawn "reboot"; }
+    
+    Super+Alt+Ctrl+BackSlash hotkey-overlay-title="shutdown" { spawn-sh "shutdown -h now"; }
 }
