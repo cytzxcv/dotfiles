@@ -1,6 +1,6 @@
 vim.api.nvim_create_autocmd("FileType", {
     pattern = {
-        "c", "c3", "cpp", "rust", "zig",
+        "c", "cpp", "rust",
         "python", "zsh"
     },
     callback = function()

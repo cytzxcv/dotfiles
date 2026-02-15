@@ -12,10 +12,10 @@ local alpha = {{
         dashboard.section.buttons.val = {
             dashboard.button("n", " " .. " New File", "<cmd>enew <CR>"),
             dashboard.button("l", "󰒲 " .. " Lazy", "<cmd>Lazy <CR>"),
-            dashboard.button("e", "󰙅 " .. " File Explorer", "<cmd>NvimTreeToggle <CR>"),
-            dashboard.button("r", " " .. " Recent files", "<cmd>Telescope oldfiles <CR>"),
-            dashboard.button("f", " " .. " Find file", "<cmd>Telescope find_files <CR>"),
-            dashboard.button("g", " " .. " Find text", "<cmd>Telescope live_grep <CR>"),
+            dashboard.button("t", "󰙅 " .. " File Explorer", "<cmd>NvimTreeToggle <CR>"),
+            dashboard.button("r", " " .. " Recent Files", "<cmd>Telescope oldfiles <CR>"),
+            dashboard.button("f", " " .. " Find File", "<cmd>Telescope find_files <CR>"),
+            dashboard.button("g", " " .. " Find Text", "<cmd>Telescope live_grep <CR>"),
             dashboard.button("d", "󱖫 " .. " Diagnostics", "<cmd>Trouble diagnostics toggle <CR>"),
             dashboard.button("s", "󰊢 " .. " Git Status", "<cmd>Telescope git_status <CR>"),
             dashboard.button("q", " " .. " Quit", "<cmd>qa <CR>")

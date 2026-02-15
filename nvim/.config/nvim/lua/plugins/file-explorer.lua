@@ -1,5 +1,6 @@
 return {{
     "nvim-tree/nvim-tree.lua",
+    lazy = false,
     config = function()
         vim.g.loaded_netrw = 1
         vim.g.loaded_netrwPlugin = 1
@@ -7,5 +8,8 @@ return {{
         vim.opt.termguicolors = true
         
         require("nvim-tree").setup()
-    end
+    end,
+    keys = {
+        { "<leader>t", "<cmd>NvimTreeToggle <CR>", desc = "Toggle File Explorer" }
+    }
 }}

@@ -4,7 +4,7 @@ return {{
     build = ":TSUpdate",
     config = function()
         require("nvim-treesitter").install({
-            "c", "c3", "cpp", "rust", "zig",
+            "c", "cpp", "rust",
             "python", "zsh"
         })
     end
